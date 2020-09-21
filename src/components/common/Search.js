@@ -49,7 +49,7 @@ class Search extends React.Component {
       searchResults: [],
     });
 
-    this.props.history.push(`/currency/${currencyId}`);
+    this.props.history.push(`${process.env.PUBLIC_URL}/currency/${currencyId}`);
   }
 
   renderSearchResults() {
